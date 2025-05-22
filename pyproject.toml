@@ -1,26 +1,25 @@
 # In uuid7_project/pyproject.toml
 
 [build-system]
-requires = [
-    "setuptools>=61.0", # Or a more recent version
-    "wheel"
-]
 build-backend = "setuptools.build_meta"
-backend-path = ["."] # Tells setuptools to look for setup.cfg/setup.py in the current dir
+    
+requires = ["setuptools>=61.8.0", "wheel" ]
+#backend-path = ["."] # Tells setuptools to look for setup.cfg/setup.py in the current dir
 
 [project]
-name = "pyuuid7gen"
+name = "UUIDv7gen"
 version = "0.1.0" # Keep this in sync with __init__.py or read from there
 authors = [
-    { name="Your Name", email="youremail@example.com" },
+    { name="Roger Mukai", email="roger@mukaiguy.com" },
 ]
 description = "A Python library to generate UUID version 7 identifiers from scratch."
 readme = "README.md"
-requires-python = ">=3.7" # Specify your minimum Python version
+license = "MIT"
+requires-python = ">=3.8" # Specify your minimum Python version
+
 classifiers = [
     "Development Status :: 3 - Alpha", # Or "3 - Alpha", "5 - Production/Stable"
     "Intended Audience :: Developers",
-    "License :: MIT License", # Choose your license
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
@@ -28,6 +27,7 @@ classifiers = [
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Operating System :: OS Independent",
     "Topic :: Software Development :: Libraries :: Python Modules",
     "Topic :: Utilities",
@@ -35,5 +35,8 @@ classifiers = [
 keywords = ["uuid", "uuid7", "guid", "unique identifier", "globally unique identifier", "generator", "uuid generator"]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/pyuuid7gen" # Example URL
-"Bug Tracker" = "https://github.com/yourusername/pyuuid7gen/issues" # Example URL
+Homepage = "https://github.com/MukaiGuy/UUIDv7"
+"Bug Tracker" = "https://github.com/MukaiGuy/UUIDv7issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
