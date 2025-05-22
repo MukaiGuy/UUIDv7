@@ -8,7 +8,7 @@ requires = ["setuptools>=61.8.0", "wheel" ]
 
 [project]
 name = "UUIDv7gen"
-version = "0.1.0" # Keep this in sync with __init__.py or read from there
+version = "0.2.0" # Keep this in sync with __init__.py or read from there
 authors = [
     { name="Roger Mukai", email="roger@mukaiguy.com" },
 ]
@@ -18,7 +18,7 @@ license = "MIT"
 requires-python = ">=3.8" # Specify your minimum Python version
 
 classifiers = [
-    "Development Status :: 3 - Alpha", # Or "3 - Alpha", "5 - Production/Stable"
+    "Development Status :: 4 - Beta", # Or "3 - Alpha", "5 - Production/Stable"
     "Intended Audience :: Developers",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.7",

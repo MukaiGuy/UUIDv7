@@ -21,6 +21,13 @@ class UUIDv7:
         # and incremented if multiple UUIDs are generated in the same millisecond.
         self._counter = self._init_counter_rand_b()
         self._lock = threading.Lock() # To make generation thread-safe
+        self.value = self.generate() # Store the generated UUID string here
+
+    def __str__(self):
+        return self.value
+
+    def __repr__(self):
+        return f"<UUIDv7 {self.value}>"
 
     def _init_counter_rand_b(self):
         """Initializes the 62-bit counter/random part (rand_b) with fresh random bits."""

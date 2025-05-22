@@ -1,5 +1,5 @@
 # In tests/test_generator.py
-from uuid7 import UUIDv7 # Correct module and class name
+from uuid7.generator import UUIDv7 # Correct module and class name
 import unittest
 
 class TestUUIDv7Generator(unittest.TestCase):
