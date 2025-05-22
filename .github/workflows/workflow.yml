@@ -41,7 +41,7 @@ jobs:
 
       # (Optional) Publish to PyPI when tagged (uncomment below if publishing)
       - name: Publish Package to PyPI
-        if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/')
+        if: github.event_name == 'push'
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
          user: __token__
